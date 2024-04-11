@@ -6,6 +6,9 @@ public class Banda extends Artista{
 		super(nome, genero, cache);
 	}
 	
-	
+	@Override
+	public String toString() {
+		return super.toString();
+	}
 
 }

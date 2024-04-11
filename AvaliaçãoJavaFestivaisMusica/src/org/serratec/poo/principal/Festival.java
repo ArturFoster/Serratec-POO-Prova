@@ -15,9 +15,9 @@ import org.serratec.poo.classes.Palco;
 public class Festival {
 	public static void main(String[] args) {
 		
-		Banda banda1 = new Banda("Imagine Dragons",Genero.INDIE, 200.00);
-		Cantor cantor1 = new Cantor("Sabrina Carpenter",Genero.POP,180.00);
-		Dj dj1 = new Dj("Alok", Genero.ELETRONICA, 180.00);
+		Banda banda1 = new Banda("Imagine Dragons",Genero.INDIE, 200000.00);
+		Cantor cantor1 = new Cantor("Sabrina Carpenter",Genero.POP,180000.00);
+		Dj dj1 = new Dj("Alok", Genero.ELETRONICA, 160000.00);
 		
 		//-------------------------------------------------------------
 		
@@ -37,32 +37,17 @@ public class Festival {
 		palco3.adicionarEvento(new Evento(dataShow,"18:00",dj1));
 		
 		//-------------------------------------------------------------
+		System.out.println(banda1);
+		System.out.println(cantor1);
+		System.out.println(dj1);
+		
+		palco1.exibirEvento();
+		palco2.exibirEvento();
+		palco3.exibirEvento();		
 		
 		System.out.println(palco1);
 		System.out.println(palco2);
 		System.out.println(palco3);
 		
-		//palco1.exibirLista();
-		
-		
-		
-		
-		
-		
-		/*List<Artista> lineUp  = new ArrayList<>();
-		List<Palco> programaPalco = new ArrayList<>();
-		
-		lineUp.add(new Banda("Imagine Dragons",Genero.INDIE, 200.00));
-		lineUp.add(new Cantor("Sabrina Carpenter",Genero.POP,180.00));
-		lineUp.add(new Dj("Alok", Genero.ELETRONICA, 180.00));
-		
-		LocalDate dataShow = LocalDate.parse("2024-04-12");
-		programaPalco.add(new Palco("Palco Principal",50000,dataShow,"20:00", lineUp.get(0)));
-		dataShow = LocalDate.parse("2024-04-15");
-		programaPalco.add(new Palco("Palco Pop",40000,dataShow,"19:00",lineUp.get(1)));
-		dataShow = LocalDate.parse("2024-04-16");
-		programaPalco.add(new Palco("Palco Eletronico",35000,dataShow,"18:00",lineUp.get(2)));
-		
-		*/
 	}
 }

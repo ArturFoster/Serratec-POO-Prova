@@ -30,7 +30,7 @@ public class Palco {
 		return evento;
 	}
 	
-	public void exibirLista() {
+	public void exibirEvento() {
 		for (Evento evento2 : evento) {
 			System.out.println(evento2);
 		}
